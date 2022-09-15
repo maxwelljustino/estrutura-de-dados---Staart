@@ -245,6 +245,106 @@ for (const propriedade in marina) {
 }
 */
 
+// Pilhas
+
+/*
+class Pilha {
+  constructor(){
+    this.itens = []
+  }
+
+push(item) {
+    this.itens.push(item);
+  }
+
+pop() {
+  this.itens.pop();
+}
+
+top(){
+  return this.itens[this.itens.length - 1];
+}
+
+isEmpty(){
+  return this.itens.length === 0;
+}
+
+}
+
+const pilha = new Pilha();
+pilha.push(10);
+pilha.push(20);
+pilha.push(30);
+pilha.push(40);
+
+pilha.pop();
+console.table(pilha.isEmpty());
+*/
+
+// Filas 
+
+/*
+class Fila {
+  constructor(){
+    this.itens = []
+  }
+  enqueue(item){
+    this.itens.push(item);
+  }
+
+  isEmpty(){
+    return this.itens.length == 0;
+  }
+
+ dequeue(){
+   if (this.isEmpty()) return undefined
+   return this.itens.shift();
+ }
+ front(){
+   return this.itens[0];
+ }
+ rear(){
+   return this.itens[this.itens.length - 1];
+ }
+}
+
+const fila = new Fila();
+fila.enqueue('Ferrari');
+fila.enqueue('Fusca');
+fila.enqueue('Del Rey');
+fila.enqueue('HB20');
+fila.dequeue();
+
+console.table(fila.itens);
+console.log(fila.isEmpty());
+
+console.log(fila.front());
+console.log(fila.rear());
+*/
+
+// Deques
+
+class Deque{
+  constructor(){
+    this.itens = []
+  }
+  insertFront(item){
+    return this.itens.unshift(item)
+  }
+  insertLast(item){
+    return this.itens.push(item)
+  }
+  deleteFront(){
+    return this.itens.shift() 
+  }
+  deleteLast(){
+    return this.itens.pop()
+  }
+  isEmpty(){}
+  front(){}
+  rear(){}
+
+}
 
 
 
